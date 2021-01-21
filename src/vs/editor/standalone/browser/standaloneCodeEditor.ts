@@ -210,12 +210,12 @@ export interface IStandaloneDiffEditor extends IDiffEditor {
 let LAST_GENERATED_COMMAND_ID = 0;
 
 let ariaDomNodeCreated = false;
-function createAriaDomNode() {
+function createAriaDomNode(element: any) {
 	if (ariaDomNodeCreated) {
 		return;
 	}
 	ariaDomNodeCreated = true;
-	aria.setARIAContainer(document.body);
+	aria.setARIAContainer(element || document.body);
 }
 
 /**
@@ -249,7 +249,7 @@ export class StandaloneCodeEditor extends CodeEditorWidget implements IStandalon
 		}
 
 		// Create the ARIA dom node as soon as the first editor is instantiated
-		createAriaDomNode();
+		createAriaDomNode(domElement.parentNode);
 	}
 
 	public addCommand(keybinding: number, handler: ICommandHandler, context?: string): string | null {

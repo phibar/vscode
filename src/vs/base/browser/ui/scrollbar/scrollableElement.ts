@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import 'vs/css!./media/scrollbars';
+// import 'vs/css!./media/scrollbars';
 import * as dom from 'vs/base/browser/dom';
 import { FastDomNode, createFastDomNode } from 'vs/base/browser/fastDomNode';
 import { IMouseEvent, StandardWheelEvent, IMouseWheelEvent } from 'vs/base/browser/mouseEvent';

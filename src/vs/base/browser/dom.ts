@@ -14,7 +14,6 @@ import { Disposable, DisposableStore, IDisposable, toDisposable } from 'vs/base/
 import * as platform from 'vs/base/common/platform';
 import { URI } from 'vs/base/common/uri';
 import { FileAccess, RemoteAuthorities } from 'vs/base/common/network';
-import { BrowserFeatures } from 'vs/base/browser/canIUse';
 import { insane, InsaneOptions } from 'vs/base/common/insane/insane';
 import { KeyCode } from 'vs/base/common/keyCodes';
 

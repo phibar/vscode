@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import 'vs/css!./gridview';
+// import 'vs/css!./gridview';
 import { Orientation } from 'vs/base/browser/ui/sash/sash';
 import { Disposable } from 'vs/base/common/lifecycle';
 import { tail2 as tail, equals } from 'vs/base/common/arrays';
